@@ -19,12 +19,13 @@
         <div class="sq-card-footer sq-text-center">
           <p class="sq-display-inline-block">Price: <%= product.base_price %> </p>
           <%# <button class="sq-nav-btn2"><%= link "Product", to: product_path(@conn, :product) ></button> %>
-          <button>Buy</button>
+          <%= link "Edit", to: shopping_path(@conn, :add, product.id) %>
+		  <button type="button" name="button"></button>
         </div>
       </div>
       <!-- Product card 1 end -->
       <% end %>
-     
+
     </div>
   </div>
 </div>
