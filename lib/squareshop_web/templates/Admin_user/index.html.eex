@@ -1,11 +1,5 @@
-<div class="sq-page">
-	<div class="sq-panel sq-topleft sq-black">
-		<h1>User Information<br>
-	</div>
-	<div class="sq-panel sq-topright sq-black" style="overflow-y: auto;">
-		<h1>Invoices</h1>
-	</div>
-	<div class="sq-panel sq-content sq-black"  style="overflow-y: auto;">
+<div class="sq-main-layout">
+	<div class="sq-panel sq-admin-bruker-listepanel sq-black"  style="overflow-y: auto;">
 		<table class="sq-tables" width="100%">
 			<thead>
 				<tr>
@@ -29,6 +23,12 @@
 			</tbody>
 
 	  </table>
+	</div>
+	<div class="sq-panel sq-admin-bruker-datapanel sq-black">
+		<h1>User Information<br>
+	</div>
+	<div class="sq-panel sq-admin-bruker-logpanel sq-black" style="overflow-y: auto;">
+		<h1>Invoices</h1>
 	</div>
 </div>
 

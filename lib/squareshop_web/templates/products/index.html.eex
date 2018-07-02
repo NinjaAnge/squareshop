@@ -1,25 +1,26 @@
-<div class="sq-page">
-  <div class="sq-topwide sq-panel sq-justify-center sq-mb-1" style="width:100%">
+<div class="sq-main-layout">
+  <div class="sq-products-layout-area-header sq-panel sq-justify-center sq-mb-1" style="width:100%">
       <h2 class="sq-text-center">Products</h2>
   </div>
-  <div class="sq-panel sq-content">
+  <div class="sq-panel sq-products-search-layout-area-panel">
     <p class="sq-justify-center">Placeholder for sort function</p>
   </div>
-  <div class="sq-endcontent"style="padding:0">
-    <div class="sq-air-y-1 sq-panel sq-flex-wrap sq-flex-center-space">
+  <div class="sq-products-table-layout-area-panel"style="padding:0">
+    <div class="sq-air-y-1 sq-panel sq-flex-wrap sq-justify-space-around">
     <!-- Product card 1 -->
     <%= for product <- @product do %>
       <div class="sq-product-card sq-card">
         <div class="sq-card-header sq-text-center">
           <p> <%= product.name %> </p>
         </div>
-        <div class="sq-card-body sq-flex-row sq-align-center sq-justify-center">
+        <div class="sq-card-body sq-flexbox-row sq-align-center sq-justify-center">
           <img src="/images/user.png" class="sq-product-img">
         </div>
         <div class="sq-card-footer sq-text-center">
           <p class="sq-display-inline-block">Price: <%= product.base_price %> </p>
-          <%# <button class="sq-button-default sq-margin-05"><%= link "Product", to: product_path(@conn, :product) ></button> %>
-          <button class="sq-button-main sq-margin-05">Buy</button>
+          <%# <button class="sq-nav-btn2"><%= link "Product", to: product_path(@conn, :product) ></button> %>
+          <%= link "Edit", to: shopping_path(@conn, :add, product.id) %>
+		  <button type="button" name="button"></button>
         </div>
       </div>
       <!-- Product card 1 end -->

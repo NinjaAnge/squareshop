@@ -1,33 +1,5 @@
-<div class="sq-page">
-	<div class="sq-panel sq-topleft sq-black">
-		<h1><%= @user.fname %> <%= @user.lname %></h1><br>
-		<ul>
-		<li>
-			<strong>Email:</strong>
-			<%= @user.email %>
-		</li>
-		<li>
-			<strong>Phone:</strong>
-			<%= @user.phone %>
-		</li>
-		<li>
-			<strong>Address:</strong>
-			<%= @user.address %>
-		</li>
-		<li>
-			<strong>Zip code:</strong>
-			<%= @user.zip_code %>
-		</li>
-		<li>
-			<strong>City:</strong>
-			<%= @user.city %>
-		</li>
-		<li>
-			<strong>Country:</strong>
-			<%= @user.country %>
-		</li>
-	</div>
-	<div class="sq-panel sq-topright sq-black"  style="overflow-y: auto;">
+<div class="sq-main-layout">
+	<div class="sq-panel sq-admin-bruker-listepanel sq-black"  style="overflow-y: auto;">
 		<table class="sq-tables" width="100%">
 			<thead>
 				<tr>
@@ -61,7 +33,35 @@
 
 	  </table>
 	</div>
-	<div class="sq-panel sq-content sq-black" style="overflow-y: auto;">
+	<div class="sq-panel sq-admin-bruker-datapanel sq-black">
+		<h1><%= @user.fname %> <%= @user.lname %></h1><br>
+		<ul>
+  <li>
+    <strong>Email:</strong>
+    <%= @user.email %>
+    </li>
+    <li>
+    <strong>Phone:</strong>
+    <%= @user.phone %>
+  </li>
+  <li>
+    <strong>Address:</strong>
+    <%= @user.address %>
+  </li>
+  <li>
+    <strong>Zip code:</strong>
+    <%= @user.zip_code %>
+  </li>
+  <li>
+    <strong>City:</strong>
+    <%= @user.city %>
+  </li>
+  <li>
+    <strong>Country:</strong>
+    <%= @user.country %> 
+  </li> 
+	</div>
+	<div class="sq-panel sq-admin-bruker-logpanel sq-black" style="overflow-y: auto;">
 		<table class="sq-tables">
 		  <tr>
 		    <th>fakturanr</th>

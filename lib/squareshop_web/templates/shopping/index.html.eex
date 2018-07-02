@@ -1,87 +1,107 @@
-<div class="sq-page">
-  <div class="sq-main">
-    <table>
-      <thead>
-        <tr>
-          <th>Product</th>
-          <th>Amount</th>
-          <th>Price</th>
-          <th>Total price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <a href="/product">
-      				<div class="sq-item-card sq-air-x-1"></div>
-      	  	</a>
-          </td>
-          <td>
-            Description of the product
-          </td>
-          <td>
-            <button class="sq-button-low" onclick="addItem()">
-              <svg id="i-minus" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                <path d="M2 16 L30 16"/>
-              </svg>
-            </button>
-            <input class="sq-border-1" type="number" id="count">
-            <button class="sq-button-low" onclick="substractItem()">
-              <svg id="i-plus" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                <path d= "M16 2 L16 30 M2 16 L30 16"/>
-              </svg>
-            </button>
-          </td>
-          <td>123,-</td>
-          <td>123,-</td>
-          <td>
-            <button class="sq-button-low">Remove</button>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="/product">
-              <div class="sq-item-card sq-air-x-1"></div>
-            </a>
-          </td>
-          <td>
-            Description of the product
-          </td>
-          <td>
-            <button class="sq-button-low" onclick="addItem()">
-              <svg id="i-minus" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                <path d="M2 16 L30 16"/>
-              </svg>
-            </button>
-            <input class="sq-border-1" type="number" id="count">
-            <button class="sq-button-low" onclick="substractItem()">
-              <svg id="i-plus" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                <path d= "M16 2 L16 30 M2 16 L30 16"/>
-              </svg>
-            </button>
-          </td>
-          <td>234,-</td>
-          <td>234,-</td>
-          <td>
-            <button class="sq-button-low">Remove</button>
-          </td>
-        </tr>
-        <tfoot>
-          <tr>
-            <td colspan="3"></td>
-            <td colspan="2"><strong>Total: 357,-</strong></td>
-            <td></td>
-          </tr>
-        </tfoot>
-      </tbody>
-    </table>
-    	<div class="sq-flex sq-flex-center-space">
-        <div>
-          <button type="button" onclick="window.location.href='/products'" class="sq-button-default">Fortsett å handle</button>
-        </div>
-        <div>
-          <button type="button" onclick="window.location.href='/homepage'" class="sq-button-default">Til Kassen</button>
-        </div>
-    	</div>
+
+  
+    <!--Top liste-->
+    <div class="sq-flex sq-mt-4">
+      <div class="sq-ml-11">Varer</div>
+      <div class="sq-ml-43">Antall</div>
+      <div class="sq-ml-13-5">Pris</div>
+      <div class="sq-ml-15">Total Pris</div>
     </div>
+ 
+  <!--hoved "liste"-->
+  <div class="sq-main-middle">
+    <div class="sq-flex sq-mt-2 sq-flex-column ">
+      <!--Row 1-->
+      <div class="sq-flex-row sq-mb-1">
+        <!--Image Space-->
+        <div class="max-width-15 sq-mt-09">
+			<a href="/product">
+				<div class="sq-item-card sq-air-x-1"></div>
+	  		</a>
+        </div>
+        <!-- Item Beskrivelse-->
+        <div class="sq-align-items-center sq-flex sq-air-x-1 max-width-30">
+		Her skal en beskrivelse av produktet
+		</div>
+        <!--add and substract items-->
+        <div class="sq-flex-row">
+          <!--the - button-->
+          <div class="sq-align-items-center sq-flex">
+            <button onclick="addItem()">
+              <svg id="i-minus" viewBox="0 0 32 32" width="23" height="22.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M2 16 L30 16"/>
+              </svg>
+            </button>
+          </div>
+          <!--The Input (change number)-->
+          <div class="sq-align-items-center sq-flex sq-mt-1">
+            <input class="sq-width-4 sq-border-1" type="number" id="count">
+          </div
+          <!--the + button-->
+          <div class="sq-align-items-center sq-flex">
+            <button onclick="substractItem()">
+              <svg id="i-plus" viewBox="0 0 32 32" width="23" height="22.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d= "M16 2 L16 30 M2 16 L30 16"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="sq-align-items-center sq-flex sq-ml-10-5 max-width-14">Pris </div>
+        <div class="sq-align-items-center sq-flex sq-air-x-1 max-width-14"> Total Pris </div>
+        <div class="sq-align-items-center sq-flex sq-ml-9"> <button class="sq-height-2 sq-align-items-center">Delete</button> </div>
+      </div>
+      <!--End of Row 1-->
+      <!--Start of Row 2-->
+	  <div class="sq-flex sq-mt-2 sq-flex-column">
+		<!--Row 1-->
+		<div class="sq-flex-row sq-mb-1">
+		  <!--Image Space-->
+		  <a href="/product">
+			  <div class="max-width-15 sq-mt-09">
+				<div class="sq-item-card sq-air-x-1"></div>
+			</a>
+			  </div>
+		  <!-- Item Beskrivelse-->
+		  <div class="sq-align-items-center sq-flex sq-air-x-1 max-width-30">
+		Her skal en beskrivelse av produktet
+		</div>
+		  <!--add and substract items-->
+		  <div class="sq-flex-row">
+			<!--the - button-->
+			<div class="sq-align-items-center sq-flex">
+			  <button onclick="addItem()">
+				<svg id="i-minus" viewBox="0 0 32 32" width="23" height="22.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+				  <path d="M2 16 L30 16"/>
+				</svg>
+			  </button>
+			</div>
+			<!--The Input (change number)-->
+			<div class="sq-align-items-center sq-flex sq-mt-1">
+			  <input class="sq-width-4 sq-border-1" type="number" id="theNumber">
+			</div>
+			<!--the + button-->
+			<div class="sq-align-items-center sq-flex">
+			  <button onclick="substractItem()">
+				<svg id="i-plus" viewBox="0 0 32 32" width="23" height="22.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+				  <path d= "M16 2 L16 30 M2 16 L30 16"/>
+				</svg>
+			  </button>
+			</div>
+		  </div>
+		  <div class="sq-align-items-center sq-flex sq-ml-10-5 max-width-14">Pris </div>
+		  <div class="sq-align-items-center sq-flex sq-air-x-1 max-width-14"> Total Pris </div>
+		  <div class="sq-align-items-center sq-flex sq-ml-9"> <button class="sq-height-2 sq-align-items-center">Delete</button> </div>
+		</div>
+      <!--Sum-->
+      <div class="sq-flex-row sq-mb-1">
+        <div class="sq-ml-85 sq-mt-1"> Sum </div>
+      </div>
   </div>
+ <!--knapper-->
+  <div class="sq-main-bot">
+	<div class="sq-flex sq-mb-1">
+      <button onclick="window.location.href='/products'" class="sq-height-2 sq-align-items-center sq-ml-15 sq-padding-4 max-width-15">Fortsett å handle</button>
+      <button onclick="window.location.href='/homepage'" class="sq-height-2 sq-align-items-center sq-mr-15 sq-justify-right sq-padding-4 max-width-15">Til Kassen</button>
+	</div>
+  </div>
+

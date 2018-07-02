@@ -1,8 +1,8 @@
-<div class="sq-page">
-	<div class="sq-topwide sq-panel">
-	</div>
-	<div class="sq-content sq-panel sq-flex-row">
-		<div class=" sq-flex-column sq-flex " style="min-width:75%;">
+<div class="sq-main-layout">
+<div class="sq-p-bildepanel sq-panel">
+</div>
+<div class="sq-p-logpanel sq-panel sq-flex-row">
+	<div class=" sq-flex-column sq-flex " style="min-width:75%;">
 			<ul>
 				<li>Passer hager opp til 500 m²</li>
 				<li>2 til 5 cm klippehøyde</li>
@@ -10,18 +10,19 @@
 				<li>Høy sikkerhet</li>
 				<li>God batterikapasitet</li>
 			</ul>
-			<a href="http://www.prisjakt.no" class=" sq-margin-2">Sammenlign priser på Prisjakt.no</a>
+		<a href="http://www.prisjakt.no" class=" sq-margin-2">Sammenlign priser på Prisjakt.no</a>
+	</div>
+	<div class=" sq-flex-column sq-flex sq-p-align-end" style="min-width:25%;">
+		<div class="sq-p-price-card sq-flex sq-justify-center">
+			<h3>2967-,</h3>
 		</div>
-		<div class=" sq-flex-column sq-flex sq-p-align-end" style="min-width:25%;">
-			<div class="sq-p-price-card sq-flex sq-justify-center">
-				<h3>2967-,</h3>
-			</div>
-			<button type="button" name="button">Handlekorg</button>
-			<button type="button" name="button">Kjøp Nå</button>
-		</div>
+		<button type="button" name="button">Handlekorg</button>
+		<button type="button" name="button">Kjøp Nå</button>
 	</div>
 
-<div class="sq-endcontent sq-panel">
+
+</div>
+<div class="sq-p-details sq-panel">
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lorem leo, laoreet at porttitor ac, blandit eget mauris. Sed varius, ligula ac viverra laoreet, augue justo auctor justo, in porta libero felis eu mauris. Nunc arcu ex, tristique vitae felis ac, tristique imperdiet metus. Nullam pharetra purus mauris. Praesent dignissim ligula purus, sit amet efficitur sem ullamcorper eu. Curabitur ut pulvinar ligula. Pellentesque accumsan orci eget metus pharetra, id tristique eros malesuada. Proin fringilla semper pulvinar. Proin bibendum commodo dolor sit amet porta.
 	Proin eleifend eu lacus et pretium. Nulla ac leo tellus. Donec et lobortis magna. Maecenas lacinia placerat accumsan. Praesent commodo est in mi luctus, et gravida nunc elementum. In ut convallis elit, a elementum risus. Pellentesque eget convallis elit.
 	Fusce sed erat fringilla, cursus tortor id, vehicula tortor. Donec at ante porta, pulvinar odio a, condimentum felis. Pellentesque nec augue imperdiet, sagittis est ut, lacinia eros. In molestie auctor velit, a volutpat ante egestas vitae. Etiam vitae euismod risus. Nullam eu nibh nisl. Sed sed maximus nulla. Quisque accumsan, purus sit amet tincidunt faucibus, risus turpis laoreet purus, sed viverra erat ipsum sed risus. Etiam pellentesque accumsan ipsum vel lobortis. Mauris nisi sapien, consectetur sit amet massa sollicitudin, dignissim faucibus justo. Morbi sed ullamcorper ligula. Quisque dictum ullamcorper mauris, a finibus lacus posuere non. Integer rhoncus urna a leo venenatis mollis vitae ut purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam pellentesque a diam ut volutpat. Pellentesque pulvinar porta nulla tempor ultrices.

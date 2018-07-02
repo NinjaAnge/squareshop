@@ -1,17 +1,17 @@
-<div class="sq-page">
-    <div class="sq-topwide sq-panel" style="background-color: red;">
+<div class="sq-main-layout">
+    <div class="sq-regpanel-tabs sq-panel" style="background-color: red;">
     <button class="sq-btn active" data-tab="tab-1" onklick="selectTab(this)"></button>
     <button class="sq-btn" data-tab="tab-2" onklick="selectTab(this)"></button>
     <button class="sq-btn" data-tab="tab-3" onklick="selectTab(this)"></button>
     </div>
-
-    <div id="tab-1" class="sq-content sq-panel tab active" style="background-color: blue;">
+   
+    <div id="tab-1" class="sq-regpanel-main sq-panel tab active" style="background-color: blue;">
      <label for="tab-1">Personalia</label></div>
-
-    <div id="tab-2" class="sq-content sq-panel tab" style="background-color: green;">
+    
+    <div id="tab-2" class="sq-regpanel-main sq-panel tab" style="background-color: green;">
     <label for="tab-2">Address</label></div>
-
-    <div id="tab-3" class="sq-content sq-panel tab" style="background-color: purple;">
+    
+    <div id="tab-3" class="sq-regpanel-main sq-panel tab" style="background-color: purple;">
     <label for="tab-3">Email/Password</label></div>
 
 </div>

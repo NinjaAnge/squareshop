@@ -10,7 +10,6 @@
     position: absolute;
     box-shadow: 0px 8px 16px 0px;
     min-width:5em;
-    z-index:999;
 }
 .sq-nav-dropdown ul{
    list-style:none;

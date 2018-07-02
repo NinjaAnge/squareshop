@@ -1,12 +1,12 @@
 
-  <div class="sq-page">
-    <div class="sq-topwide sq-invoice-card sq-flex-column">
-      <div class="sq-flexbox-row sq-margin-1 sq-shadow-sm sq-b-border sq-flex-center-space">
+  <div class="sq-layout-area-invoice">
+    <div class="sq-invoice-card sq-flexbox-column">
+      <div class="sq-flexbox-row sq-margin-1 sq-shadow-sm sq-b-border" style="justify-content:space-around;margin:0;padding:1em;background-color:lightgrey;border-color:grey;">
         <button>Hold</button>
         <button>Not in use</button>
         <button>Cancel</button>
       </div>
-      <div class="sq-flex-row sq-margin-1 sq-flex-center-space">
+      <div class="sq-flexbox-row sq-margin-1" style="justify-content:space-around;">
         <div style="align-items:center;">
           <p style="border:none;opacity:0.4">Billed to</p>
           <p>Client name</p>
@@ -29,9 +29,7 @@
           <p>27.07.2018</p>
         </div>
       </div>
-    </div>
-    <div class="sq-content sq-invoice-card">
-      <div class="sq-flex-row sq-margin-1">
+      <div class="sq-flexbox-row sq-margin-1">
         <table class="sq-text-center">
           <thead>
             <tr>
@@ -83,3 +81,4 @@
       </div>
     </div>
   </div>
+

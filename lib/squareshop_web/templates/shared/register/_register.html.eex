@@ -63,7 +63,7 @@
 					</div>
 				</form>
 				<div class="sq-text-center">
-					<button onclick="window.location.href='/homepage'" type="submit" class="sq-button-default">Register</button>
+					<button onclick="window.location.href='/homepage'" type="submit" class="sq-btn">Register</button>
 				</div>
 			<%= end %>
 		</div>

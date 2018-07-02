@@ -17,6 +17,11 @@
       <div role="navigation" class="sq-navbar-layout">
   		<div class="sq-navbar-nav  sq-secondary sq-text-right">
       <!--links -->
+      <div class="sq-air-x-05">
+      	<a href="#" class="sq-text-white sq-secondary sq-r-border sq-x-padding-05">Welcome to our store!</a>
+      	<a href="#" class="sq-text-white sq-secondary sq-r-border sq-x-padding-05">Sign up for our newsletter</a>
+      	<a href="#" class="sq-text-white sq-secondary sq-x-padding-05">Contact us</a>
+      </div>
       <!--NAVBAR Part 2/3-->
   		</div>
   			<div class="sq-navbar-domain  sq-secondary" style="width:100%;display:flex;">
@@ -37,56 +42,34 @@
   				<div class="sq-flex-1 sq-text-right">
   					<div class="sq-air-x-05 sq-nav-btn-group2 sq-flex-1">
         			<!-- UserButton -->
-    					<button class="sq-nav-btn2"><%= link "Register", to: user_path(@conn, :new) %></button>
-            			<button onclick="toggleModal('myModal')">
-              			<svg id="i-user" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  	<path d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z" />
-              			</svg>
-            			</button>
+					<button class="sq-nav-btn2"><%= link "Register", to: user_path(@conn, :new) %></button>
+        			<button onclick="toggleModal('myModal')">
+          			<svg id="i-user" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              	<path d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z" />
+          			</svg>
+        			</button>
         			<!-- ShoppingCartButton -->
-                  <button class="sq-dropdown">
-        						<svg id="i-cart" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        							<path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" />
-        							<circle cx="25" cy="27" r="2" />
-        							<circle cx="12" cy="27" r="2" />
-        						</svg>
-        						<div class="sq-flex-wrap sq-secondary sq-t-border-3 sq-dropdown-content-right">
-        							<div class="sq-shoppingcart-card sq-secondary">
-        								<div class="sq-shoppingcart-pic">
-        									<div class="sq-item-card sq-secondary">Picture here</div>
-        								</div>
-        								<div class="sq-shoppingcart-pic">
-        									<ul class="sq-list">
-        										<li>Product Name</li>
-        										<li class="sq-mt-3 sq-text-left">Price</li>
-        									</ul>
-        								</div>
-        							</div>
-        							<div class="sq-text-right">Sum</div>
-        							<p><a class="sq-nounderline sq-secondary" href="http://localhost:4000/shopping">Go To Cart</a></p>
-        						</button>
-        					</div>
-        				</div>
-        			</div>
-      			<!--NAVBAR Part 3/3 -->
-            <div class="sq-navbar-links sq-secondary-highlight sq-text-center">
-    				  <div class="sq-nav-btn-group">
-    					  <button class="sq-dropdown">
-    						  Categories
-    						  <div class="sq-dropdown-content sq-secondary">
-      							<p><a class="sq-nounderline sq-secondary" href="http://localhost:4000/products">Category 1</a></p>
-      							<p><a class="sq-nounderline sq-secondary" href="#">Category 2</a></p>
-      							<p><a class="sq-nounderline sq-secondary" href="#">Category 3</a></p>
-      							<p><a class="sq-nounderline sq-secondary" href="#">Category 4</a></p>
-    						  </div>
-    					  </button>
-                <button onclick="location.href='http://localhost:4000/products'">Products</button>
-  					<button onclick="location.href='http://localhost:4000/products'">White Kopps</button>
-  					<button onclick="location.href='http://localhost:4000/products'">Big Black Kopps</button>
-  					<button onclick="location.href='http://localhost:4000/products'">Bestselgere</button>
-  					<button onclick="location.href='http://localhost:4000/products'">Kampanjer</button>
-  					<button onclick="location.href='http://localhost:4000/userpage'">User Page</button>
-				  </div>
+        			<button>
+          			<svg id="i-cart" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              	<path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" />
+              	<circle cx="25" cy="27" r="2" />
+              	<circle cx="12" cy="27" r="2" />
+          			</svg>
+        			</button>
+    				</div>
+  				</div>
+  			</div>
+  			<!--NAVBAR Part 3/3 -->
+  			<div class="sq-navbar-links sq-secondary-highlight sq-text-center">
+  				<div class="sq-nav-btn-group">
+  					<a href="/categories">Categories</a>
+            <a href="/products">Products</a>
+  					<a href="/products">White Kopps</a>
+  					<a href="/products">Big Black Kopps</a>
+  					<a href="/products">Bestselgere</a>
+  					<a href="/products">Kampanjer</a>
+  					<a href="/user/1">Userpage</a>
+  				</div>
   			</div>
   		</div>
     </nav>
@@ -96,7 +79,7 @@
     <footer class="sq-secondary">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-      <div style="justify-content: space-around; margin-top: -0.4rem;" class="sq-secondary  sq-flex-center-space sq-flex sq-flex-row sq-justify-center"><div>
+      <div style="justify-content: space-around; margin-top: -0.4rem;" class="sq-secondary sq-flex sq-flex-row sq-justify-center"><div>
         <a href="#" onclick="toggleModal2()" class="sq-text-white sq-secondary">Social media</a>
       </div>
       <div>
@@ -149,34 +132,33 @@
     <!-- /page -->
 	<!--login modal -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-    <div class="sq-modal" id="myModal" >
-      <div class="sq-modal-body" style="width:24rem;">
-  		<header>
-        <div class="sq-close-button" onclick="toggleModal('myModal')">&times;</div>
-      </header>
-        <div class="sq-modal-content">
-          <section>
-  					<form class="sq-form" action="index.html" method="post">
-          		<fieldset>
-      					<legend>Login</legend>
-      					<label>Email</label>
-      					<input type="email" name="" value="" placeholder="E-mail">
-      					<label>Password</label>
-      					<input type="password" name="" value="" placeholder="Password">
-      					<div class=" sq-container">
-                  <div class="sq-justify-left">
-    								<button class="sq-button-main" type="submit" name="">Login</button>
-    							</div>
-    							<div class="sq-justify-right">
-    								<button class="sq-button-low" type="button" name="">New user</button>
-    							</div>
-            		</div>
-          		</fieldset>
-  					</form>
-          </section>
-        </div>
-      </div>
-    </div>
+	<div class="sq-modal" id="myModal" >
+	    <div class="sq-modal-body" style="width:24rem;">
+			<header>
+	            <div class="sq-close-button" onclick="toggleModal('myModal')">&times;</div>
+	        </header>
+	        <div class="sq-modal-content">
+					<section>
+						<form class="sq-form" action="index.html" method="post">
+	        				<fieldset>
+	          					<legend>Login</legend>
+	          					<label>Email</label>
+	          					<input type="email" name="" value="" placeholder="E-mail">
+	          					<label>Password</label>
+	          					<input type="password" name="" value="" placeholder="Password">
+	          					<div class=" sq-container">
+									<a href="/">
+										<div class="sq-justify-left">
+												<button type="button" name="">Login</button>
+										</div>
+									</a>
+	          					</div>
+	        				</fieldset>
+						</form>
+	                </section>
+	        </div>
+	    </div>
+	</div>
 <!--Login modal end -->
 </body>
 </html>
