@@ -4,6 +4,7 @@ defmodule Squareshop.Identity.User do
 	import Ecto.Changeset
 	require Logger
 	alias Comeonin.Pbkdf2
+
 	schema "users" do
 		field :fname, :string
 		field :lname, :string
@@ -14,9 +15,12 @@ defmodule Squareshop.Identity.User do
 		field :city, :string
     	field :country, :string
     	field :zip_code, :integer
-		field :shopping_cart, {:array, :integer}
+		embeds_many :shopping_cart, Sales.Cart
 		timestamps()
 	end
+
+
+
 	def changeset(user, attrs) do
 		# Logger.debug("user #{inspect(user)}")
 		Logger.debug("number 1 ran")
@@ -24,6 +28,7 @@ defmodule Squareshop.Identity.User do
 		|> cast(attrs, [:fname, :lname, :phone, :email, :password, :address, :city, :country, :zip_code])
 		|> validate_required([:fname, :lname, :email])
 		|> update_change(:password, &Pbkdf2.hashpwsalt/1)
+
 
 
 	end
