@@ -9,10 +9,10 @@ defmodule Squareshop.Sales.Cart do
   end
 
 
-  def changeset(item, attrs) do
+  def changeset(attrs, cart) do
 
-	  item
-	  |> cast(attrs, [:product_id, :amount])
+	  cart
+	  |> cast(head, [:product_id, :amount])
 	  |> validate_required([:product_id, :amount])
 
   end
