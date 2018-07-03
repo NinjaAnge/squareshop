@@ -1,0 +1,67 @@
+/* FlexBox*/
+
+.sq-flex-1{
+    flex: 1;
+    }
+    .sq-flex-auto{
+        flex: auto;
+    }
+
+    .sq-container{
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+    .sq-reguser-container{
+      display: flex;
+      height: 23rem;
+      max-width: 20em;
+    
+    }
+    .sq-flex-column{flex-direction:column;}
+    .sq-flex-row{flex-direction:row;}
+    .sq-justify-center{
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sq-justify-right{
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+    .sq-justify-left{
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+    .sq-flex{
+        display:flex;
+    }
+    
+    .sq-flex-center-space{
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .sq-flex-wrap{
+        flex-wrap:wrap;
+    }
+    .sq-flexbox-row{
+        display:flex;
+        flex-direction:row;
+    }
+  .sq-flexbox-column{
+        display:flex;
+        flex-direction:column;
+    }
+  .sq-align-center{
+        align-items:center;
+    }
+  .sq-justify-space-between{
+        justify-content:space-between;
+    }
+  .sq-justify-space-evenly{
+        justify-content:space-evenly;
+    }
+  .sq-display-inline-block{
+        display:inline-block;
+    }

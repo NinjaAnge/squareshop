@@ -1,0 +1,75 @@
+.sq-nav-btn-group button {
+    background-color: var(--secondary-highlight);
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.sq-btn1{
+    height:10%;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color:var(--background);
+    padding:0;
+    margin:0;
+    justify-content: center;
+  }
+
+  /* Clear floats (clearfix hack) */
+.sq-nav-btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sq-nav-btn-group button:not(:last-child) {
+    border-right: none;
+}
+
+  .sq-nav-btn-group button:hover {
+      background-color: var(--secondary);
+  }
+
+  /* 2nd NAV buttons*/
+
+.sq-btn-3 button {
+    background-color: var(--secondary);
+    border: none;
+    color: white;
+    padding: 4px 20px;
+    cursor: pointer;
+  }
+  .sq-btn-3 button:hover {
+    background-color: var(--secondary-highlight);
+  }
+  .sq-nav-btn-group2 .sq-nav-btn2 {
+    padding-top: 12px;
+  }
+  .sq-nav-btn-group2 button {
+    background-color: var(--secondary);
+    border: none;
+    color: white;
+    padding: 4px 20px 5px 20px;
+    cursor: pointer;
+  }
+  .sq-nav-btn-group2:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .sq-nav-btn-group2 button:not(:last-child) {
+    border-right: none;
+  }
+  .sq-nav-btn-group2 button:hover {
+    background-color: var(--secondary-highlight);
+  }
+
+/*Nav Margin*/
+  .sq-nav-margin{
+    margin-top: -0.5em;
+    margin-right: 5em;
+    margin-left: -3em;
+  }

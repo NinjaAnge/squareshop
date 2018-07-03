@@ -79,3 +79,20 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.sq-grid-area-landing-slideshow{
+  grid-area: 1 / 2 / span 2 / span 7;
+}
+
+.sq-grid-area-landing-best{
+  grid-area: 5 / 2 / span end / span 3;
+}
+.sq-grid-area-landing-news{
+  grid-area: 5 / 6 / span end / span 3;
+}
+.sq-landing-card{
+  width:12rem;
+  height:14rem;
+  background-color:var(--primary-highlight);
+  margin:0.5em;
+}

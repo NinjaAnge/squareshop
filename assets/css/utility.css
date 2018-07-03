@@ -141,3 +141,7 @@
 .sq-width-90p{width: 90%;}
 .sq-width-95p{width: 95%;}
 .sq-width-100p{width: 100%;}
+
+/* overflow */
+.sq-overflow-hidden{ overflow: hidden;}
+.sq-overflow-scroll{overflow: scroll;}
